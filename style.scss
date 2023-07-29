@@ -426,6 +426,8 @@ main {
           }
           div.teksJudul {
             flex: 1;
+            display: flex;
+            align-items: center;
             h1 {
               font-size: 40px;
               color: white;
@@ -445,6 +447,47 @@ main {
             font-size: 20px;
             text-align: center;
             color: white;
+          }
+        }
+      }
+    }
+    // PACKAGES
+    div.ourPackages {
+      padding: 100px 0px;
+      background-color: aqua;
+      div.teksPackages {
+        padding-bottom: 40px;
+        background-color: red;
+        h1 {
+          font-size: 50px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+      div.pembungkusPackages {
+        background-color: blue;
+        max-width: 1200px;
+        padding: 20px 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div.pembungkusCard {
+          border: 2px solid white;
+          max-width: 200px;
+            
+          div.gambar {
+            max-width: 100px;
+            background-color: orange;
+            max-height: 100px;
+            
+            
+          }
+          h1 {
+            
+          }
+          p {
+            background-color: yellow;
           }
         }
       }

@@ -379,6 +379,8 @@ main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul 
 }
 main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul div.teksJudul {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul div.teksJudul h1 {
   font-size: 40px;
@@ -398,4 +400,38 @@ main div.container div.feature div.pembungkusNomorDesk div.pembungkusDesk p {
   font-size: 20px;
   text-align: center;
   color: white;
+}
+main div.container div.ourPackages {
+  padding: 100px 0px;
+  background-color: aqua;
+}
+main div.container div.ourPackages div.teksPackages {
+  padding-bottom: 40px;
+  background-color: red;
+}
+main div.container div.ourPackages div.teksPackages h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+main div.container div.ourPackages div.pembungkusPackages {
+  background-color: blue;
+  max-width: 1200px;
+  padding: 20px 0px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main div.container div.ourPackages div.pembungkusPackages div.pembungkusCard {
+  border: 2px solid white;
+  max-width: 200px;
+}
+main div.container div.ourPackages div.pembungkusPackages div.pembungkusCard div.gambar {
+  max-width: 100px;
+  background-color: orange;
+  max-height: 100px;
+}
+main div.container div.ourPackages div.pembungkusPackages div.pembungkusCard p {
+  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */
