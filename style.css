@@ -170,6 +170,9 @@ header section.container nav ul.bar li a {
   color: black;
 }
 
+main div.container {
+  margin: auto;
+}
 main div.container div.judul {
   padding-top: 100px;
   padding-bottom: 25px;
@@ -203,6 +206,7 @@ main div.container div.pembungkusKiriKanan {
 }
 main div.container div.pembungkusKiriKanan div.kiri {
   flex: 1;
+  flex-wrap: wrap;
   padding-left: 10px;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusGambar div.gambar {
@@ -338,4 +342,60 @@ main div.container div.pembungkusKiriKanan div.kanan div.pembungkusKotak div.pem
   border: 3px solid gray;
   cursor: pointer;
   color: black;
+}
+main div.container div.feature {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #243735;
+}
+main div.container div.feature div.teksWhy {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #728dec;
+}
+main div.container div.feature div.teksWhy h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+}
+main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+}
+main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul div.teksNomor {
+  flex: 0.5;
+  display: flex;
+  justify-content: end;
+  height: 50%;
+}
+main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul div.teksNomor h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 20px;
+}
+main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul div.teksJudul {
+  flex: 1;
+}
+main div.container div.feature div.pembungkusNomorDesk div.pembungkusNomorJudul div.teksJudul h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  max-width: 500px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+main div.container div.feature div.pembungkusNomorDesk div.pembungkusDesk {
+  display: flex;
+  margin: auto;
+  max-width: 800px;
+}
+main div.container div.feature div.pembungkusNomorDesk div.pembungkusDesk p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

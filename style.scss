@@ -154,6 +154,7 @@ $color_nav: #5c7bca;
 $color_container2: #1b2c6c;
 $contactUs: #edf0f4;
 $color_travel: #728dec;
+$color_feature: #243735;
 $sm: 640px;
 $md: 748px;
 $lg: 1048px;
@@ -198,6 +199,7 @@ header {
 
 main {
   div.container {
+    margin: auto;
     div.judul {
       padding-top: 100px;
       padding-bottom: 25px;
@@ -232,6 +234,7 @@ main {
 
       div.kiri {
         flex: 1;
+        flex-wrap: wrap;
         padding-left: 10px;
 
         div.pembungkusGambar {
@@ -323,7 +326,7 @@ main {
         flex: 0.5;
 
         div.pembungkusKotak {
-          background-color: $contactUs  ;
+          background-color: $contactUs;
           border-radius: 25px;
           padding-bottom: 100px;
           padding-left: 50px;
@@ -384,6 +387,64 @@ main {
                 color: black;
               }
             }
+          }
+        }
+      }
+    }
+    div.feature {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: $color_feature;
+      div.teksWhy {
+        text-align: center;
+        padding-bottom: 50px;
+        color: $color_travel;
+        h1 {
+          font-weight: bold;
+          color: white;
+          font-size: 50px;
+        }
+      }
+      div.pembungkusNomorDesk {
+        div.pembungkusNomorJudul {
+          padding-top: 50px;
+          padding-bottom: 30px;
+          display: flex;
+          div.teksNomor {
+            flex: 0.5;
+            display: flex;
+            justify-content: end;
+            height: 50%;
+            h1 {
+              font-size: 40px;
+              font-weight: bold;
+              color: white;
+              background-color: black;
+              border-radius: 50%;
+              padding: 20px;
+            }
+          }
+          div.teksJudul {
+            flex: 1;
+            h1 {
+              font-size: 40px;
+              color: white;
+              font-weight: bold;
+              max-width: 500px;
+              text-align: center;
+              padding-bottom: 20px;
+              padding-left: 20px;
+            }
+          }
+        }
+        div.pembungkusDesk {
+          display: flex;
+          margin: auto;
+          max-width: 800px;
+          p {
+            font-size: 20px;
+            text-align: center;
+            color: white;
           }
         }
       }
