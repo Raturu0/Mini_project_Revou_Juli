@@ -17,7 +17,7 @@
             <img src="img/ahmad logo.png" alt="" />
           </div>
           <!-- pembungkus home, contact us, dan our packages -->
-          <ul>
+          <ul class="bar">
             <li><a href="#home"> Home </a></li>
             <li><a href="#outPackages"> Out Packages </a></li>
             <li><a href="#callUs"> Call us </a></li>
@@ -29,28 +29,81 @@
 
     <!-- MAIN -->
     <main>
-      <section class="container">
-        <!-- judul -->
+      <div class="container">
         <div class="judul">
           <h1>
-            Your trusted <br />
+            Your Trusted <br />
             <span>Travel Agents</span>
           </h1>
+          <p>Your happiness is our happiness</p>
         </div>
-        <div class="happy">
-          <h4>Your happiness is our happiness</h4>
+        <!-- kiri kanan -->
+        <div class="pembungkusKiriKanan">
+          <div class="kiri">
+            <div class="pembungkusGambar">
+              <div
+                style="background-image: url(img/gunung.png)"
+                class="gambar slide active"
+              ></div>
+              <div
+                style="background-image: url(img/wisata\ 2.png)"
+                class="gambar slide"
+              ></div>
+              <div
+                style="background-image: url(img/wisata\ 3.jpeg)"
+                class="gambar slide"
+              ></div>
+            </div>
+            <div class="pembungkusButton">
+              <button onclick="prevSlide()"><</button>
+              <button onclick="nextSlide()">></button>
+            </div>
+            <div class="pembungkusTulisanFoto">
+              <p class="teksLiburan">
+                "Liburan menjadi menyenangkan bersama Travel Agentku"
+              </p>
+              <div class="pembungkusFotoBio">
+                <div class="foto">
+                  <div
+                    style="background-image: url(img/windah.png)"
+                    class="foto"
+                  ></div>
+                </div>
+                <div class="pembungkusTeks">
+                  <div class="teks">
+                    <p>Ahmad Aziz Fauzi</p>
+                    <p>Mahasiswa, 19</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kanan">
+            <div class="pembungkusKotak">
+              <div class="teksContact">
+                <h1>Contact Us</h1>
+                <p>
+                  Sales akan menghubungi anda 1x24 jam setelah data kami terima
+                </p>
+              </div>
+              <div class="pembungkusForm">
+                <label for="nama"> Your Name : </label> <br />
+                <input type="text" id="nama" placeholder="First name and last name" />
+                <label for="email"> Email Address : </label> <br />
+                <input type="text" id="email" placeholder="Email Address" />
+                <label for="option"> What are you interested in : </label> <br />
+                <input type="text" id="option" placeholder="Select Option" />
+              </div>
+              <div class="pembungkusButton">
+                <button type="submit">Send</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- gambar -->
-        <div class="gambar"></div>
-        <h3>Liburan jadi menyenangkan bersama Travel Agen</h3>
-        <div class="pembungkusfotoProfil">
-          <div class="fotoProfil"></div>
-        </div>
-        <div class="mahasiswa">
-            Ahmad Aziz Fauzi <br> Mahasiswa, 19
-        </div>
-      </section>
+      </div>
     </main>
     <!-- MAIN END -->
+
+    <script src="js/script.js"></script>
   </body>
 </html>
