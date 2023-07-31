@@ -173,7 +173,7 @@ header {
   section.container {
     margin: auto;
     nav {
-      position:rel;
+      position: rel;
       overflow: hidden;
       display: flex;
       justify-content: space-between;
@@ -207,13 +207,17 @@ header {
 }
 
 main {
-  margin-bottom: 20px;
   div.container {
+    background-color: #000; /* Warna hitam fallback */
+    background-image: linear-gradient(
+      180deg,
+      #000,
+      #800080
+    ); /* Gradien warna hitam ke ungu */
     margin: auto;
     div.judul {
       padding-top: 200px;
       padding-bottom: 25px;
-      background-color: black;
       h1 {
         color: white;
         font-weight: bold;
@@ -235,7 +239,6 @@ main {
       }
     }
     div.pembungkusKiriKanan {
-      background-color: black;
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 60px;
@@ -424,7 +427,6 @@ main {
     div.containerPembungkusUse {
       padding: 10px 0px 250px 80px;
       height: 100px;
-      background-color: black;
 
       div.pembungkusUse {
         width: 50%;
@@ -477,7 +479,12 @@ main {
     // PACKAGES
     section.ourPackages {
       margin: auto;
-      background-color: whitesmoke;
+      background-color: #fff; /* Warna putih fallback */
+      background-image: linear-gradient(
+        90deg,
+        #fff,
+        #808080
+      ); /* Gradien warna putih ke abu-abu */
       div.teksPackages {
         padding-bottom: 40px;
         h1 {
@@ -560,7 +567,12 @@ main {
 section.callUs {
   div.container {
     padding: 100px 0px;
-    background-color: $color_callus;
+    background-color: #000080; /* Warna biru tua fallback */
+    background-image: linear-gradient(
+      90deg,
+      #000080,
+      #00bfff
+    ); /* Gradien warna biru tua ke biru muda */
 
     div.teksTunggu {
       padding-bottom: 30px;
@@ -622,8 +634,13 @@ section.callUs {
   }
 }
 div.pembatas {
-  background-color: gray;
-  padding: 30px;
+  background-color: #000080; /* Warna biru tua fallback */
+  background-image: linear-gradient(
+    90deg,
+    #800080,
+    #000080
+  ); /* Gradien warna biru tua ke ungu */
+  padding: 15px;
 }
 
 div.containerCopy {
@@ -636,9 +653,6 @@ div.containerCopy {
       color: white;
       font-size: 15px;
       margin: auto;
-
     }
-    
-
   }
 }

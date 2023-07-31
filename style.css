@@ -180,16 +180,14 @@ header section.container nav ul.bar li a {
   color: black;
 }
 
-main {
-  margin-bottom: 20px;
-}
 main div.container {
+  background-color: #000; /* Warna hitam fallback */
+  background-image: linear-gradient(180deg, #000, #800080); /* Gradien warna hitam ke ungu */
   margin: auto;
 }
 main div.container div.judul {
   padding-top: 200px;
   padding-bottom: 25px;
-  background-color: black;
 }
 main div.container div.judul h1 {
   color: white;
@@ -210,7 +208,6 @@ main div.container div.judul p {
   margin: auto;
 }
 main div.container div.pembungkusKiriKanan {
-  background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 60px;
@@ -376,7 +373,6 @@ main div.container div.pembungkusKiriKanan div.kanan div.pembungkusKotak div.pem
 main div.container div.containerPembungkusUse {
   padding: 10px 0px 250px 80px;
   height: 100px;
-  background-color: black;
 }
 main div.container div.containerPembungkusUse div.pembungkusUse {
   width: 50%;
@@ -422,7 +418,8 @@ main div.container div.containerPembungkusUse div.pembungkusUse div.nomorTeks di
 }
 main div.container section.ourPackages {
   margin: auto;
-  background-color: whitesmoke;
+  background-color: #fff; /* Warna putih fallback */
+  background-image: linear-gradient(90deg, #fff, #808080); /* Gradien warna putih ke abu-abu */
 }
 main div.container section.ourPackages div.teksPackages {
   padding-bottom: 40px;
@@ -493,7 +490,8 @@ main div.container section.ourPackages div.pembungkusPackages div.pembungkusCard
 
 section.callUs div.container {
   padding: 100px 0px;
-  background-color: #5d4cfa;
+  background-color: #000080; /* Warna biru tua fallback */
+  background-image: linear-gradient(90deg, #000080, #00bfff); /* Gradien warna biru tua ke biru muda */
 }
 section.callUs div.container div.teksTunggu {
   padding-bottom: 30px;
@@ -550,8 +548,9 @@ section.callUs div.container div.button a h1:hover {
 }
 
 div.pembatas {
-  background-color: gray;
-  padding: 30px;
+  background-color: #000080; /* Warna biru tua fallback */
+  background-image: linear-gradient(90deg, #800080, #000080); /* Gradien warna biru tua ke ungu */
+  padding: 15px;
 }
 
 div.containerCopy {
