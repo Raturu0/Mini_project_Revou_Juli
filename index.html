@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
           <!-- pembungkus home, contact us, dan our packages -->
           <ul class="bar">
             <li><a href="#home"> Home </a></li>
-            <li><a href="#outPackages"> Out Packages </a></li>
+            <li><a href="#ourPackages"> Our Packages </a></li>
             <li><a href="#callUs"> Call us </a></li>
           </ul>
         </nav>
@@ -27,8 +27,8 @@
     </header>
     <!-- HEADER/NAVBAR END -->
 
-    <!-- MAIN -->
-    <main>
+    <!-- CONTENT -->
+    <main id="home">
       <div class="container">
         <div class="judul">
           <h1>
@@ -93,11 +93,20 @@
                   id="nama"
                   placeholder="First name and last name"
                 />
-                <label for="email"> Email Address : </label> <br />
-                <input type="text" id="email" placeholder="Email Address" />
-                <label for="option"> What are you interested in : </label>
+                <label for="email"> Email Address : </label>
                 <br />
-                <input type="text" id="option" placeholder="Select Option" />
+                <input type="email" id="email" placeholder="Email Address" />
+                <br />
+                <label for="interested"> What are you interested in : </label>
+                <br />
+                <select name="interested" id="interested">
+                  <option value="bali">Bali</option>
+                  <option value="bandung">Bandung</option>
+                  <option value="boyolali">Boyolali</option>
+                  <option value="surabaya">Surabaya</option>
+                  <option value="singapura">Singapura</option>
+                  <option value="jepang">Jepang</option>
+                </select>
               </div>
               <div class="pembungkusButton">
                 <button type="submit">Send</button>
@@ -105,175 +114,200 @@
             </div>
           </div>
         </div>
-        <!-- FEATURE (WHY CHOOSE US) -->
-        <div class="feature">
-          <div class="teksWhy">
-            <h1>Why Choose Us</h1>
-          </div>
-          <!-- satu -->
-          <div class="pembungkusNomorDesk">
-            <div class="pembungkusNomorJudul">
-              <div class="teksNomor">
+
+        <!-- use this space -->
+        <div class="containerPembungkusUse">
+          <div class="pembungkusUse">
+            <div class="teksUse">
+              <h1>
+                Use this space to provide users with more information about your
+                offer. Consider it a follow-up to your headline and explain the
+                benefits of your service product
+              </h1>
+            </div>
+            <div class="nomorTeks">
+              <div class="nomor">
                 <h1>1</h1>
               </div>
-              <div class="teksJudul">
-                <h1>Akses Destinasi Impian dengan Lebih Mudah</h1>
+              <div class="teks">
+                <p>
+                  Your first feature, written in the form of a benefit statement
+                </p>
               </div>
             </div>
-
-            <div class="pembungkusDesk">
-              <p>
-                Nikmati kemudahan dan kecepatan dalam mengakses berbagai
-                destinasi impian Anda melalui Aplikasi Travel Agen Kami. Temukan
-                pilihan perjalanan yang lengkap dan terpercaya, mulai dari
-                tujuan populer hingga tempat tersembunyi yang jarang diketahui.
-                Menjadikan perencanaan petualangan Anda menjadi lebih efisien
-                dan menyenangkan!
-              </p>
-            </div>
-          </div>
-          <!-- dua -->
-          <div class="pembungkusNomorDesk">
-            <div class="pembungkusNomorJudul">
-              <div class="teksNomor">
+            <div class="nomorTeks">
+              <div class="nomor">
                 <h1>2</h1>
               </div>
-              <div class="teksJudul">
-                <h1>Pengalaman Perjalanan yang Dipersonalisasi</h1>
+              <div class="teks">
+                <p>
+                  Your second feature, written in the form of a benefit
+                  statement
+                </p>
               </div>
             </div>
-            <div class="pembungkusDesk">
-              <p>
-                Kami memahami bahwa setiap perjalanan adalah unik untuk setiap
-                individu. Oleh karena itu, Aplikasi Travel Agen Kami menawarkan
-                fitur personalisasi untuk memenuhi kebutuhan dan preferensi
-                Anda. Dengan pilihan kustomisasi rute, aktivitas, dan akomodasi,
-                Anda dapat merencanakan perjalanan sesuai impian dan gaya
-                pribadi Anda. Rasakan kepuasan penuh dengan pengalaman
-                perjalanan yang sepenuhnya disesuaikan.
-              </p>
-            </div>
-          </div>
-          <!-- tiga -->
-          <div class="pembungkusNomorDesk">
-            <div class="pembungkusNomorJudul">
-              <div class="teksNomor">
+            <div class="nomorTeks">
+              <div class="nomor">
                 <h1>3</h1>
               </div>
-              <div class="teksJudul">
-                <h1>Bantuan dan Dukungan 24/7</h1>
+              <div class="teks">
+                <p>
+                  Your third feature, written in the form of a benefit statement
+                </p>
               </div>
-            </div>
-
-            <div class="pembungkusDesk">
-              <p>
-                Tidak perlu khawatir jika menghadapi kendala selama perjalanan!
-                Aplikasi Travel Agen Kami menyediakan bantuan dan dukungan 24
-                jam sehari, 7 hari seminggu. Tim kami siap membantu Anda dengan
-                pertanyaan, perubahan rencana, atau situasi darurat selama
-                perjalanan. Kami menempatkan keamanan dan kenyamanan Anda
-                sebagai prioritas utama.
-              </p>
             </div>
           </div>
         </div>
-        <!-- FEATURE (WHY CHOOSE US) END-->
 
+        <!-- PEMBATAS -->
+        <div class="pembatas"></div>
         <!-- PACKAGES  -->
-        <section class="ourPackages">
+        <section class="ourPackages" id="ourPackages">
           <div class="teksPackages">
             <h1>Our Packages</h1>
           </div>
           <div class="pembungkusPackages">
-            <a href="">
-              <div class="pembungkusCard">
-                <div class="pembungkusHover"">
+            <div class="pembungkusCard">
+              <div class="pembungkusHover">
+                <div class="pembungkusSvgKota" style="display: flex">
+                  <div
+                    class="svg"
+                    style="background-image: url(img/icon\ lokasi.png)"
+                  ></div>
                   <h1>Bali</h1>
-                  <p>
-                    Bali, pesona alam dan budaya yang menakjubkan. Nikmati
-                    keindahan alam, temukan cagar budaya, dan lezatnya kuliner
-                    lokal.
-                  </p>
                 </div>
+                <p>
+                  Bali, pesona alam dan budaya yang menakjubkan. Nikmati
+                  keindahan alam, temukan cagar budaya, dan lezatnya kuliner
+                  lokal.
+                </p>
               </div>
-            </a>
-            <a href="">
-              <div class="pembungkusCard">
-                <div class="pembungkusHover">
-                 
+            </div>
+            <div class="pembungkusCard">
+              <div class="pembungkusHover">
+                <div class="pembungkusSvgKota" style="display: flex">
+                  <div
+                    class="svg"
+                    style="background-image: url(img/icon\ lokasi.png)"
+                  ></div>
                   <h1>Bandung</h1>
-                  <p>
-                    Bandung, kota kreatif dan penuh pesona. Temukan keindahan
-                    alam, keanekaragaman budaya, dan nikmati atmosfernya yang
-                    unik.
-                  </p>
                 </div>
+                <p>
+                  Bandung, kota kreatif dan penuh pesona. Temukan keindahan
+                  alam, keanekaragaman budaya, dan nikmati atmosfernya yang
+                  unik.
+                </p>
               </div>
-            </a>
-            <a href="">
-              <div class="pembungkusCard">
-                <div class="pembungkusHover">
-                 
+            </div>
+            <div class="pembungkusCard">
+              <div class="pembungkusHover">
+                <div class="pembungkusSvgKota" style="display: flex">
+                  <div
+                    class="svg"
+                    style="background-image: url(img/icon\ lokasi.png)"
+                  ></div>
                   <h1>Boyolali</h1>
-                  <p>
-                    Boyolali, kota susu yang menggugah selera. Nikmati cita rasa
-                    segar dari susu berkualitas, dan rasakan pesonanya yang
-                    memikat dengan keindahan alamnya. Selamat menikmati
-                    kelezatan dan keindahan kota ini!
-                  </p>
                 </div>
+                <p>
+                  Boyolali, kota susu yang menggugah selera. Nikmati cita rasa
+                  segar dari susu berkualitas, dan rasakan pesonanya yang
+                  memikat dengan keindahan alamnya. Selamat menikmati kelezatan
+                  dan keindahan kota ini!
+                </p>
               </div>
-            </a>
-            <a href="">
-              <div class="pembungkusCard">
-                <div class="pembungkusHover">
-                 
+            </div>
+            <div class="pembungkusCard">
+              <div class="pembungkusHover">
+                <div class="pembungkusSvgKota" style="display: flex">
+                  <div
+                    class="svg"
+                    style="background-image: url(img/icon\ lokasi.png)"
+                  ></div>
                   <h1>Surabaya</h1>
-                  <p>
-                    Surabaya, kota penuh semangat dan keberagaman. Temukan
-                    pesona sejarahnya, jelajahi atraksi menarik, dan nikmati
-                    hidangan kuliner yang menggugah selera. Selamat menikmati
-                    pengalaman tak terlupakan di kota ini!
-                  </p>
                 </div>
+                <p>
+                  Surabaya, kota penuh semangat dan keberagaman. Temukan pesona
+                  sejarahnya, jelajahi atraksi menarik, dan nikmati hidangan
+                  kuliner yang menggugah selera. Selamat menikmati pengalaman
+                  tak terlupakan di kota ini!
+                </p>
               </div>
-            </a>
-            <a href="">
-              <div class="pembungkusCard">
-                <div class="pembungkusHover">
-                 
+            </div>
+            <div class="pembungkusCard">
+              <div class="pembungkusHover">
+                <div class="pembungkusSvgKota" style="display: flex">
+                  <div
+                    class="svg"
+                    style="background-image: url(img/icon\ lokasi.png)"
+                  ></div>
                   <h1>Singapura</h1>
-                  <p>
-                    Singapura, destinasi megah dan modern. Terpesona dengan
-                    arsitektur futuristiknya, jelajahi atraksi ikonisnya, dan
-                    nikmati kelezatan kuliner dari berbagai budaya. Selamat
-                    menikmati pesona kota yang begitu istimewa ini!
-                  </p>
                 </div>
+                <p>
+                  Singapura, destinasi megah dan modern. Terpesona dengan
+                  arsitektur futuristiknya, jelajahi atraksi ikonisnya, dan
+                  nikmati kelezatan kuliner dari berbagai budaya. Selamat
+                  menikmati pesona kota yang begitu istimewa ini!
+                </p>
               </div>
-            </a>
-            <a href="">
-              <div class="pembungkusCard">
-                <div
-                  class="pembungkusHover"
-                >
+            </div>
+            <div class="pembungkusCard">
+              <div class="pembungkusHover">
+                <div class="pembungkusSvgKota" style="display: flex">
+                  <div
+                    class="svg"
+                    style="background-image: url(img/icon\ lokasi.png)"
+                  ></div>
                   <h1>Jepang</h1>
-                  <p>
-                    Jepang, negeri penuh pesona tradisi dan inovasi. Menyelami
-                    keindahan budaya kuno, merasakan teknologi canggih, dan
-                    menikmati kuliner yang lezat dan unik. Selamat
-                    mengeksplorasi keajaiban negeri yang menakjubkan ini!
-                  </p>
                 </div>
+                <p>
+                  Jepang, negeri penuh pesona tradisi dan inovasi. Menyelami
+                  keindahan budaya kuno, merasakan teknologi canggih, dan
+                  menikmati kuliner yang lezat dan unik. Selamat mengeksplorasi
+                  keajaiban negeri yang menakjubkan ini!
+                </p>
               </div>
-            </a>
+            </div>
           </div>
         </section>
-
-        <!-- PACKAGED END -->
       </div>
     </main>
-    <!-- MAIN END -->
+
+    <div class="pembatas"></div>
+    <!-- FOOTER -->
+    <footer id="callUs">
+      <section class="callUs">
+        <div class="container">
+          <!-- teks tunggu -->
+          <div class="teksTunggu">
+            <h1 class="tunggu">Tunggu apa lagi?</h1>
+            <h1 class="hubungi">Hubungi kami sekarang juga</h1>
+          </div>
+          <div class="teksJelajahi">
+            <p>
+              Jelajahi keindahan dunia dengan mudah melalui Aplikasi Travel Agen
+              kami. Temukan destinasi impian, rencanakan petualangan, dan
+              ciptakan kenangan tak terlupakan dengan antarmuka ramah pengguna
+              dan fitur lengkap kami.
+            </p>
+          </div>
+          <!-- button -->
+          <div class="button">
+            <a href="">
+              <h1>Call Us</h1>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div class="containerCopy">
+      <div class="copy">
+        <h1>Copyright Ahmad</h1>
+        <h1>2023</h1>
+      </div>
+    </div>
+
 
     <script src="js/script.js"></script>
   </body>
