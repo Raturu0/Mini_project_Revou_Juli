@@ -157,6 +157,12 @@ header section.container nav {
   display: flex;
   justify-content: space-between;
 }
+header section.container nav .logo {
+  width: 200px; /* Sesuaikan lebar kontainer sesuai ukuran gambar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header section.container nav ul.bar {
   display: flex;
   box-sizing: border-box;
@@ -181,6 +187,7 @@ header section.container nav ul.bar li a {
 }
 
 main div.container {
+  margin: auto;
   background-color: #000; /* Warna hitam fallback */
   background-image: linear-gradient(180deg, #000, #800080); /* Gradien warna hitam ke ungu */
   margin: auto;
@@ -197,6 +204,14 @@ main div.container div.judul h1 {
 }
 main div.container div.judul h1 span {
   color: skyblue;
+}
+main div.container div.judul h1 span::-moz-selection {
+  color: black;
+  background-color: skyblue;
+}
+main div.container div.judul h1 span::selection {
+  color: black;
+  background-color: skyblue;
 }
 main div.container div.judul p {
   font-weight: bold;
@@ -218,9 +233,10 @@ main div.container div.pembungkusKiriKanan div.kiri {
   flex: 1;
   flex-wrap: wrap;
   padding-left: 10px;
+  margin: auto;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusGambar div.gambar {
-  width: 700px;
+  width: 90%;
   height: 400px;
   background-size: cover;
   border-radius: 10px;
@@ -232,7 +248,7 @@ main div.container div.pembungkusKiriKanan div.kiri div.pembungkusGambar .active
   display: block;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusButton {
-  width: 700px;
+  width: 90%;
   display: flex;
   padding-top: 10px;
   justify-content: space-between;
@@ -255,8 +271,9 @@ main div.container div.pembungkusKiriKanan div.kiri div.pembungkusButton button:
   cursor: pointer;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto {
-  padding-top: 70px;
+  padding-top: 50px;
   width: 700px;
+  margin-left: 50px;
   text-align: center;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto p.teksLiburan {
@@ -266,16 +283,16 @@ main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto p.
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto div.pembungkusFotoBio {
   display: flex;
+  padding-top: 20px;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto div.pembungkusFotoBio div.foto {
   flex: 0.5;
   display: flex;
   justify-content: end;
-  padding-top: 20px;
 }
-main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto div.pembungkusFotoBio div.foto div {
-  width: 100px;
-  height: 100px;
+main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto div.pembungkusFotoBio div.foto div.fotoku {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   background-size: cover;
 }
@@ -286,10 +303,10 @@ main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto di
   text-align: start;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto div.pembungkusFotoBio div.pembungkusTeks div.teks {
-  padding-left: 20px;
+  padding-left: 5px;
   width: 200px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
 }
@@ -548,9 +565,9 @@ section.callUs div.container div.button a h1:hover {
 }
 
 div.pembatas {
-  background-color: #000080; /* Warna biru tua fallback */
-  background-image: linear-gradient(90deg, #800080, #000080); /* Gradien warna biru tua ke ungu */
-  padding: 15px;
+  background-color: #000; /* Warna hitam fallback */
+  background-image: linear-gradient(90deg, #000, #fff); /* Gradien warna hitam ke putih */
+  padding: 10px;
 }
 
 div.containerCopy {
