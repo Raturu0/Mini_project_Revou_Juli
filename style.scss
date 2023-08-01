@@ -516,8 +516,9 @@ main {
         flex-wrap: wrap;
 
         div.pembungkusCard {
-          padding-left: 80px;
-          padding-right: 60px;
+          display: flex;
+          justify-content: center;
+          width: 30%;
           margin: auto;
 
           div.pembungkusHover {
@@ -797,4 +798,3 @@ div.containerCopy {
     margin-left: -400px;
   }
 }
-  

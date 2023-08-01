@@ -453,8 +453,9 @@ main div.container section.ourPackages div.pembungkusPackages {
   flex-wrap: wrap;
 }
 main div.container section.ourPackages div.pembungkusPackages div.pembungkusCard {
-  padding-left: 80px;
-  padding-right: 60px;
+  display: flex;
+  justify-content: center;
+  width: 30%;
   margin: auto;
 }
 main div.container section.ourPackages div.pembungkusPackages div.pembungkusCard div.pembungkusHover {
