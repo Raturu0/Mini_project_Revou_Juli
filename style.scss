@@ -174,10 +174,10 @@ header {
   section.container {
     margin: auto;
     nav {
-      position: rel;
       overflow: hidden;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       .logo {
         width: 200px; /* Sesuaikan lebar kontainer sesuai ukuran gambar */
@@ -272,13 +272,7 @@ main {
             background-size: cover;
             border-radius: 10px;
           }
-          .slide {
-            display: none;
-          }
-
-          .active {
-            display: block;
-          }
+         
         }
         div.pembungkusButtonSlide {
           width: 90%;
@@ -313,7 +307,6 @@ main {
             font-style: italic;
             color: gray;
             font-size: 20px;
-            background-color: orange;
           }
 
           div.pembungkusFotoBio {
@@ -736,18 +729,6 @@ div.containerCopy {
   }
 }
 
-/* Misalkan lebar maksimum untuk tata letak responsif adalah 768px */
-@media (max-width: 768px) {
-  /* Atur ul.bar agar memiliki tata letak vertikal */
-  ul.bar {
-    flex-direction: column;
-  }
-
-  /* Atur lebar elemen li agar memenuhi seluruh lebar layar */
-  ul.bar li {
-    width: 100%;
-  }
-}
 
 @media (max-width: $sm) {
   div.pembungkusGambar {
@@ -813,10 +794,7 @@ div.containerCopy {
     font-style: italic;
     color: gray;
     font-size: 20px;
-    background-color: orange;
     margin-left: -400px;
   }
-
- 
-  
 }
+  

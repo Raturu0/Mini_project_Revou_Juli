@@ -153,10 +153,10 @@ header section.container {
   margin: auto;
 }
 header section.container nav {
-  position: rel;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 header section.container nav .logo {
   width: 200px; /* Sesuaikan lebar kontainer sesuai ukuran gambar */
@@ -242,12 +242,6 @@ main div.container div.pembungkusKiriKanan div.kiri div.pembungkusGambar div.gam
   background-size: cover;
   border-radius: 10px;
 }
-main div.container div.pembungkusKiriKanan div.kiri div.pembungkusGambar .slide {
-  display: none;
-}
-main div.container div.pembungkusKiriKanan div.kiri div.pembungkusGambar .active {
-  display: block;
-}
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusButtonSlide {
   width: 90%;
   display: flex;
@@ -280,7 +274,6 @@ main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto p.
   font-style: italic;
   color: gray;
   font-size: 20px;
-  background-color: orange;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto div.pembungkusFotoBio {
   display: flex;
@@ -630,17 +623,6 @@ div.containerCopy div.copy h1 {
     margin-left: -50px;
   }
 }
-/* Misalkan lebar maksimum untuk tata letak responsif adalah 768px */
-@media (max-width: 768px) {
-  /* Atur ul.bar agar memiliki tata letak vertikal */
-  ul.bar {
-    flex-direction: column;
-  }
-  /* Atur lebar elemen li agar memenuhi seluruh lebar layar */
-  ul.bar li {
-    width: 100%;
-  }
-}
 @media (max-width: 640px) {
   div.pembungkusGambar {
     width: 300px;
@@ -692,7 +674,6 @@ div.containerCopy div.copy h1 {
     font-style: italic;
     color: gray;
     font-size: 20px;
-    background-color: orange;
     margin-left: -400px;
   }
 }/*# sourceMappingURL=style.css.map */
