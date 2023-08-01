@@ -280,6 +280,7 @@ main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto p.
   font-style: italic;
   color: gray;
   font-size: 20px;
+  background-color: orange;
 }
 main div.container div.pembungkusKiriKanan div.kiri div.pembungkusTulisanFoto div.pembungkusFotoBio {
   display: flex;
@@ -440,7 +441,8 @@ main div.container div.containerPembungkusUse div.pembungkusUse div.nomorTeks di
 main div.container section.ourPackages {
   margin: auto;
   background-color: #fff; /* Warna putih fallback */
-  background-image: linear-gradient(90deg, #fff, #808080); /* Gradien warna putih ke abu-abu */
+  background-image: linear-gradient(90deg, #fff, #808080); /* Gradien 
+backwarna putih ke abu-abu */
 }
 main div.container section.ourPackages div.teksPackages {
   padding-bottom: 40px;
@@ -614,9 +616,6 @@ div.containerCopy div.copy h1 {
     width: 500px;
     margin: auto;
   }
-  div.pembungkusFotoBio {
-    background-color: greenyellow;
-  }
   div.pembungkusFotoBio div.foto {
     margin-right: 100px;
     margin: auto;
@@ -655,6 +654,45 @@ div.containerCopy div.copy h1 {
   }
   section.ourPackages {
     margin-top: 100px;
+  }
+  div.teksJelajahi {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  div.teksJelajahi p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+  div.third {
+    margin-top: 500px;
+  }
+  div.pembungkusKiriKanan {
+    flex-direction: column;
+  }
+  div.pembungkusGambar {
+    width: 90%;
+  }
+  div.pembungkusButtonSlide {
+    width: 90%;
+  }
+  div.pembungkusKiriKanan {
+    padding-left: 0px;
+  }
+  div.pembungkusGambar {
+    flex: block;
+    width: 400px;
+    margin: auto;
+    margin-left: -20px;
+  }
+  p.teksLiburan {
+    font-style: italic;
+    color: gray;
+    font-size: 20px;
     background-color: orange;
+    margin-left: -400px;
   }
 }/*# sourceMappingURL=style.css.map */
