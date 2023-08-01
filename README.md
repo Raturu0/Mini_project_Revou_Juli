@@ -1,5 +1,5 @@
 # Mini_project_Revou_Juli
-A mini project for introduction software engineer in Revou Program
+A mini project for introduction software engineer in Revou Program using vanilla CSS with SCSS
 <br>
 In this repository, I try to complete my assignment at Revou Program (Introduction Software Engineering).
 <br>
