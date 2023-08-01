@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+  </head>
+  <body>
+    <!-- Bagian form -->
+    <form
+      class="pembungkusForm"
+      name="message-form"
+      onsubmit="return validateForm()"
+    >
+      <label for="nama"> Your Name : </label> <br />
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="First name and last name"
+      />
+      <label for="email"> Email Address : </label>
+      <br />
+      <input type="email" id="email" placeholder="Email Address" />
+      <br />
+      <label for="interested"> What are you interested in : </label>
+      <br />
+      <select name="interested" id="interested">
+        <option value="bali">Bali</option>
+        <option value="bandung">Bandung</option>
+        <option value="boyolali">Boyolali</option>
+        <option value="surabaya">Surabaya</option>
+        <option value="singapura">Singapura</option>
+        <option value="jepang">Jepang</option>
+      </select>
+      <div class="pembungkusButton">
+        <button type="submit" value="submit">Send</button>
+      </div>
+    </form>
+
+    <!-- Script JavaScript -->
+    <script>
+      function validateForm() {
+        var nama = document.forms["message-form"]["nama"].value;
+        var email = document.forms["message-form"]["email"].value;
+        var interested = document.forms["message-form"]["interested"].value;
+
+        if (nama == "" || email == "" || interested == "") {
+          alert("Tidak boleh kosong");
+          return false;
+        }
+
+        // Mengisi data ke elemen dengan ID yang sesuai
+        document.getElementById("sender-nama").innerText = nama;
+        document.getElementById("sender-email").innerText = email;
+        document.getElementById("sender-interested").innerText = interested;
+
+        return false;
+      }
+    </script>
+    
+    <!-- Bagian untuk menampilkan hasil input form -->
+    <div class="form-output">
+      <p>Nama : <span id="sender-nama"></span></p>
+      <p>email : <span id="sender-email"></span></p>
+      <p>interested : <span id="sender-interested"></span></p>
+    </div>
+  </body>
+</html>

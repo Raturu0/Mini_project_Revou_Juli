@@ -163,13 +163,14 @@ $lg: 1048px;
 header {
   background-color: $color_nav;
   padding: 1px 3px;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  position: fixed;
   background-color: $color_nav;
   padding: 1px 3px;
+  margin: auto;
   section.container {
     margin: auto;
     nav {
@@ -179,13 +180,11 @@ header {
       justify-content: space-between;
 
       .logo {
-     
         width: 200px; /* Sesuaikan lebar kontainer sesuai ukuran gambar */
         display: flex;
         justify-content: center;
         align-items: center;
       }
-
 
       ul.bar {
         display: flex;
@@ -224,7 +223,6 @@ main {
       #000,
       #800080
     ); /* Gradien warna hitam ke ungu */
-    margin: auto;
     div.judul {
       padding-top: 200px;
       padding-bottom: 25px;
@@ -236,7 +234,7 @@ main {
 
         span {
           color: skyblue;
-          
+
           &::selection {
             color: black;
             background-color: skyblue;
@@ -259,11 +257,12 @@ main {
       padding-left: 60px;
       padding-right: 60px;
       display: flex;
+      margin: auto;
+      overflow: hidden;
 
       div.kiri {
         flex: 1;
         flex-wrap: wrap;
-        padding-left: 10px;
         margin: auto;
 
         div.pembungkusGambar {
@@ -281,7 +280,7 @@ main {
             display: block;
           }
         }
-        div.pembungkusButton {
+        div.pembungkusButtonSlide {
           width: 90%;
           display: flex;
           padding-top: 10px;
@@ -308,7 +307,6 @@ main {
         div.pembungkusTulisanFoto {
           padding-top: 50px;
           width: 700px;
-          margin-left: 50px;
           text-align: center;
 
           p.teksLiburan {
@@ -320,6 +318,9 @@ main {
           div.pembungkusFotoBio {
             display: flex;
             padding-top: 20px;
+            margin: auto;
+            padding-bottom: 40px;
+            align-self: center;
 
             div.foto {
               flex: 0.5;
@@ -377,7 +378,7 @@ main {
               font-size: 18px;
             }
           }
-          div.pembungkusForm {
+          form.message-form {
             label {
               font-size: 20px;
               font-weight: bold;
@@ -444,7 +445,7 @@ main {
     div.containerPembungkusUse {
       padding: 10px 0px 250px 80px;
       height: 100px;
-
+      display: flex;
       div.pembungkusUse {
         width: 50%;
 
@@ -520,6 +521,7 @@ main {
         div.pembungkusCard {
           padding-left: 80px;
           padding-right: 60px;
+          margin: auto;
 
           div.pembungkusHover {
             background-size: cover;
@@ -671,5 +673,94 @@ div.containerCopy {
       font-size: 15px;
       margin: auto;
     }
+  }
+}
+
+@media (max-width: 1100px) {
+  div.pembungkusKiriKanan {
+    flex-direction: column;
+  }
+
+  div.pembungkusGambar {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: $md) {
+  div.pembungkusKiriKanan {
+    flex-direction: column;
+  }
+
+  div.pembungkusGambar {
+    width: 90%;
+  }
+
+  div.pembungkusButtonSlide {
+    width: 90%;
+  }
+
+  div.pembungkusKiriKanan {
+    padding-left: 0px;
+  }
+
+  div.pembungkusGambar {
+    flex: block;
+    width: 500px;
+    margin: auto;
+  }
+
+  div.pembungkusFotoBio {
+    background-color: greenyellow;
+    div.foto {
+      margin-right: 100px;
+      margin: auto;
+      margin-left: -50px;
+      width: 100px;
+    }
+  }
+  div.pembungkusTeks {
+    div.teks {
+      margin-left: -50px;
+    }
+  }
+
+  div.pembungkusFotoBio {
+    div.foto {
+      margin-right: 100px;
+      margin-left: -50px;
+    }
+  }
+}
+
+/* Misalkan lebar maksimum untuk tata letak responsif adalah 768px */
+@media (max-width: 768px) {
+  /* Atur ul.bar agar memiliki tata letak vertikal */
+  ul.bar {
+    flex-direction: column;
+  }
+
+  /* Atur lebar elemen li agar memenuhi seluruh lebar layar */
+  ul.bar li {
+    width: 100%;
+  }
+}
+
+@media (max-width: $sm) {
+  div.pembungkusGambar {
+    width: 300px;
+    height: 500px;
+    margin-left: -100px;
+    margin: auto;
+  }
+
+  div.containerPembungkusUse {
+    height: 500px;
+    height: auto;
+  }
+
+  section.ourPackages {
+    margin-top: 100px;
+    background-color: orange;
   }
 }

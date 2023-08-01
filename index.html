@@ -53,10 +53,10 @@
                 style="background-image: url(img/wisata\ 3.jpeg)"
                 class="gambar slide"
               ></div>
-            </div>
-            <div class="pembungkusButton">
-              <button onclick="prevSlide()"><</button>
-              <button onclick="nextSlide()">></button>
+              <div class="pembungkusButtonSlide">
+                <button onclick="prevSlide()"><</button>
+                <button onclick="nextSlide()">></button>
+              </div>
             </div>
             <div class="pembungkusTulisanFoto">
               <p class="teksLiburan">
@@ -65,7 +65,9 @@
               <div class="pembungkusFotoBio">
                 <div class="foto">
                   <div
-                    style="background-image: url(https://www.reviewtekno.com/wp-content/uploads/2022/09/pp-wa-kosong-biasa.webp)"
+                    style="
+                      background-image: url(https://www.reviewtekno.com/wp-content/uploads/2022/09/pp-wa-kosong-biasa.webp);
+                    "
                     class="fotoku"
                   ></div>
                 </div>
@@ -86,11 +88,16 @@
                   Sales akan menghubungi anda 1x24 jam setelah data kami terima
                 </p>
               </div>
-              <div class="pembungkusForm">
+              <form
+                class="message-form"
+                name="message-form"
+                onsubmit="return validateForm()"
+              >
                 <label for="nama"> Your Name : </label> <br />
                 <input
                   type="text"
                   id="nama"
+                  name="nama"
                   placeholder="First name and last name"
                 />
                 <label for="email"> Email Address : </label>
@@ -107,10 +114,10 @@
                   <option value="singapura">Singapura</option>
                   <option value="jepang">Jepang</option>
                 </select>
-              </div>
-              <div class="pembungkusButton">
-                <button type="submit">Send</button>
-              </div>
+                <div class="pembungkusButton">
+                  <button type="submit" value="submit">Send</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -301,7 +308,7 @@
     </footer>
 
     <div class="pembatas"></div>
-    
+
     <!-- COPYRIGHT -->
     <div class="containerCopy">
       <div class="copy">
@@ -310,7 +317,14 @@
       </div>
     </div>
 
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js">
+    </script>
 
-    <script src="js/script.js"></script>
+    <div class="form-output">
+      <p>Nama : <span id="sender-nama"></span></p>
+      <p>email : <span id="sender-email"></span></p>
+      <p>interested : <span id="sender-interested"></span></p>
+    </div>
   </body>
 </html>
